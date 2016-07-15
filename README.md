@@ -7,10 +7,10 @@ functions list:<br />
 // 1) Get the next unique ID.
 string unid_next_id(void);
 
-// 2) Change unique ID to timestamp.
+// 2) Change unique ID to time stamp.
 int unid_get_time(string id);
 
-// 3) Change unique ID to machine info.
+// 3) Change unique ID to worker id.
 array unid_get_worker_id(string id);
 ```
 

@@ -13,9 +13,9 @@ dnl [  --with-unid             Include unid support])
 
 dnl Otherwise use enable:
 
-dnl PHP_ARG_ENABLE(unid, whether to enable unid support,
+PHP_ARG_ENABLE(unid, whether to enable unid support,
 dnl Make sure that the comment is aligned:
-dnl [  --enable-unid           Enable unid support])
+[  --enable-unid           Enable unid support])
 
 if test "$PHP_UNID" != "no"; then
   dnl Write more examples of tests here...
@@ -45,7 +45,7 @@ if test "$PHP_UNID" != "no"; then
 
   dnl # --with-unid -> check for lib and symbol presence
   dnl LIBNAME=unid # you may want to change this
-  dnl LIBSYMBOL=unid # you most likely want to change this 
+  dnl LIBSYMBOL=unid # you most likely want to change this
 
   dnl PHP_CHECK_LIBRARY($LIBNAME,$LIBSYMBOL,
   dnl [
@@ -59,5 +59,5 @@ if test "$PHP_UNID" != "no"; then
   dnl
   dnl PHP_SUBST(UNID_SHARED_LIBADD)
 
-  PHP_NEW_EXTENSION(unid, unid.c, $ext_shared)
+  PHP_NEW_EXTENSION(unid, unid.c shm.c, $ext_shared)
 fi
