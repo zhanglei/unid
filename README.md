@@ -1,8 +1,8 @@
 # unid
 PHP unique ID generator, based on the Twitter Snowflake algorithm!
 
-functions list:<br />
-
+functions list:
+---------------
 ```php
 // 1) Get the next unique ID.
 string unid_next_id(void);
