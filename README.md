@@ -4,7 +4,6 @@ PHP unique ID generator, based on the Twitter Snowflake algorithm!
 functions list:<br />
 
 ```php
-<?php
 // 1) Get the next unique ID.
 string unid_next_id(void);
 
@@ -45,7 +44,7 @@ $  sudo make install
 php.ini configure entries:
 --------------------------
 <pre><code>
-[ukey]
-unid.datacenter = integer
+[unid]
+unid.datacenter = int
 unid.twepoch = uint64
 </code></pre>
