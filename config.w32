@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("unid", "for unid support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("unid", "enable unid support", "no");
+
+if (PHP_UNID != "no") {
+	EXTENSION("unid", "unid.c");
+}
+
